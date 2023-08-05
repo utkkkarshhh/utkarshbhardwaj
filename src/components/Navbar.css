@@ -1,0 +1,135 @@
+.navbar {
+  margin: 0;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+
+.navbar-scrolled {
+  margin: 0;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-container {
+  padding: 0 14px;
+  border: 1px solid grey;
+  width: fit-content;
+  background-color: azure;
+  border-radius: 48px;
+  transition: all 0.6s ease-in-out;
+}
+
+.menu-container-scrolled {
+  border-radius: 0px 0px 14px 14px;
+  padding: 0 14px;
+  border: 1px solid grey;
+  width: fit-content;
+  background-color: rgb(239, 247, 247);
+  transition: all 0.6s ease-in-out;
+}
+
+ul {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.menu-items {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  padding: 20px 10px;
+  margin: 0px 10px;
+}
+
+.active {
+  background-color: #1da1f2;
+  border-radius: 48px;
+  padding: 8px 13px;
+  color: white;
+}
+
+.menu-item {
+  transition: all 0.1s ease-in;
+}
+
+.search {
+  width: 18px;
+  height: auto;
+}
+
+.sun {
+  width: 15px;
+  height: auto;
+  border-radius: 50%;
+  animation: sun 5s linear infinite;
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.moon {
+  width: 15px;
+  height: auto;
+  border-radius: 50%;
+  animation: moon 5s linear infinite;
+}
+
+@keyframes moon {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-35deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Night Mode Functionality */
+
+.dark-mode {
+  color: white;
+  background-color: #243447;
+
+  .menu-container {
+    background-color: #243447;
+  }
+  .menu-container-scrolled {
+    background-color: #243447;
+  }
+  .hero {
+    background-color: #243447;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+  }
+  .header-wave img {
+    background-color: #243447;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+  }
+}
