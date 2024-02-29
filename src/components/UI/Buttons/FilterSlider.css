@@ -48,7 +48,6 @@
 @media (max-width: 767px) {
   .filter-slider {
     flex-wrap: nowrap;
-    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none; /* hide scrollbar for mobile devices */
     -ms-overflow-style: none;
@@ -59,9 +58,8 @@
   }
 
   .tech-filter {
-    white-space: nowrap;
-    font-size: 0.8rem;
+    font-size: 9px;
     padding: 10px 15px;
-    margin: 5px;
+    margin: 5px auto;
   }
 }

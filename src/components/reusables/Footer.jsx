@@ -13,7 +13,6 @@ import NightFooterWave from "../../img/nightFooterWave.png";
 import ModeContext from "../store/ModeContext";
 
 function Footer() {
-
   const { darkMode } = useContext(ModeContext);
 
   const clickHandler = () => {

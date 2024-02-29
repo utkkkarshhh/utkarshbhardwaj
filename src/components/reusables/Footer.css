@@ -55,7 +55,7 @@
 .footer-section #creds {
   padding-top: 15px;
   font-size: 14px;
-  font-weight: 15;
+  font-weight: 500;
 }
 
 .footer-section #creds a {
@@ -66,4 +66,3 @@
   color: #000;
   transition: 0.5s;
 }
-

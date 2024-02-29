@@ -67,7 +67,6 @@ ul {
 .active {
   background-color: #1da1f2;
   border-radius: 48px;
-  padding: 8px 13px;
   color: white;
 }
 
@@ -105,5 +104,22 @@ ul {
   .footerWave {
     background-color: #161818;
     background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 10%;
+    margin: 0 auto;
+  }
+  .menu-container {
+    padding: 0 1px;
+    border-radius: 48px;
+  }
+  .menu-container-scrolled {
+    border-radius: 0px 0px 14px 14px;
+    padding: 0 4px;
+    border: 1px solid grey;
+    width: fit-content;
   }
 }

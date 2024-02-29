@@ -1,14 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./HeroSection.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookF,
-  faTwitter,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 import VectorImage from "../../img/3301603.png";
+import ModeContext from "../store/ModeContext";
 
 const HeroSection = () => {
+  const { darkMode } = useContext(ModeContext);
   return (
     <div className="hero">
       <div className="hero-content">
@@ -17,10 +13,13 @@ const HeroSection = () => {
           <p className="heroDescription">
             Crafting enticing digital products through design and code
           </p>
-          <div className="social-icons">
-            <FontAwesomeIcon icon={faFacebookF} />
-            <FontAwesomeIcon icon={faTwitter} />
-            <FontAwesomeIcon icon={faInstagram} />
+          <div className="heroButtons">
+            <button className={darkMode ? "heroButton1" : "darkModeButton"}>
+              Download Resume
+            </button>
+            <button className={darkMode ? "heroButton1" : "darkModeButton"}>
+              Contact Me
+            </button>
           </div>
         </div>
         <div className="right-section">

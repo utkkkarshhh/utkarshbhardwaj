@@ -1,16 +1,47 @@
 .techStack {
   display: flex;
   flex-direction: row;
-  min-width: 50px;
+  min-width: 200px;
   align-items: center;
-  justify-content: space-between;
-  background-color: rgb(203, 203, 255);
+  text-align: center;
+  justify-content: space-around;
+  background-color: #1da1f2;
   border-radius: 22px;
-  padding: 5px 15px;
+  margin: 20px 10px;
+  padding: 5px 5px 0px 5px;
   border: 1x;
-  border-style: groove;
+  cursor: pointer;
+  transition: 600ms;
+  color: white;
+}
+
+.techStack:hover {
+  background-color: rgb(25, 25, 26);
+  color: white;
+}
+
+.techStackLogo {
+  font-size: 40px;
+  text-align: center;
 }
 
 .stackName {
   padding: 0px 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .techStack {
+    width: 50px;
+    margin: 5px 2px;
+  }
+
+  .techStackLogo {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .stackName {
+    padding: 0px 5px;
+  }
 }

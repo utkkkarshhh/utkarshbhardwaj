@@ -11,6 +11,7 @@ const LandingPage = () => {
       <HeroSection />
       <AboutSection />
       <TechStackSection />
+      <ProjectsSection/>
     </div>
   );
 };

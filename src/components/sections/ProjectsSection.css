@@ -21,8 +21,6 @@
   font-size: 58px;
 }
 
-
-/* Project Card Animation */
 @keyframes fadeSlideUp {
   from {
     opacity: 0;
@@ -39,6 +37,3 @@
   animation: fadeSlideUp 0.5s ease-out;
   animation-delay: calc(var(--index) * 0.1s);
 }
-
-
-

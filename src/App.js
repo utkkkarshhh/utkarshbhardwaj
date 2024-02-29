@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/reusables/Navbar";
+import Header from "./components/reusables/Header";
 import Footer from "./components/reusables/Footer";
 import LandingPage from "./components/Pages/LandingPage";
 import ContactPage from "./components/Pages/ContactPage";
@@ -10,7 +11,7 @@ const App = () => {
   return (
     <div>
       <Router>
-        <Navbar />
+        <Header />
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />

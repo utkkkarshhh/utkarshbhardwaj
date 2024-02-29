@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./FilterSlider.css";
-import { act } from "react-dom/test-utils";
 
 function FilterSlider({ currentFilter }) {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -22,11 +21,11 @@ function FilterSlider({ currentFilter }) {
       </div>
       <div
         className={`tech-filter ${
-          activeFilter === "MERN" ? "activeFilter" : ""
+          activeFilter === "Fullstack" ? "activeFilter" : ""
         }`}
-        onClick={() => clickHandler("MERN")}
+        onClick={() => clickHandler("Fullstack")}
       >
-        MERN
+        Fullstack Web Apps
       </div>
       <div
         className={`tech-filter ${
@@ -38,11 +37,11 @@ function FilterSlider({ currentFilter }) {
       </div>
       <div
         className={`tech-filter ${
-          activeFilter === "UI Clones" ? "activeFilter" : ""
+          activeFilter === "Others" ? "activeFilter" : ""
         }`}
-        onClick={() => clickHandler("UI Clones")}
+        onClick={() => clickHandler("Others")}
       >
-        UI Clones
+        Others
       </div>
     </div>
   );
