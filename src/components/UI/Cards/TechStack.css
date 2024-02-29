@@ -1,0 +1,22 @@
+.techStack {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(203, 203, 255);
+  border-radius: 22px;
+  padding: 10px 30px;
+  border: 1x;
+  border-style: groove;
+}
+
+img {
+  max-width: 50px;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.stackName{
+  padding: 0px 10px;
+}

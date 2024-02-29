@@ -1,0 +1,79 @@
+.footer-section {
+  padding: 13px 0 10px 0;
+  background-color: #1da1f2;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.back2Top {
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer-section .socials-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.socials-footer .fa {
+  color: white;
+  padding: 10px 10px;
+}
+
+.socials-footer .fa:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+.footer-hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section #creds {
+  padding-top: 15px;
+  font-size: 14px;
+  font-weight: 15;
+}
+
+.footer-section #creds a {
+  color: white;
+}
+
+.footer-section #creds a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+.footer-wave {
+  /**Footer Wave*/
+  margin-top: 40px;
+  padding: 0px;
+  background-color: #1da1f2;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+.footer-wave img {
+  width: 100%;
+}
