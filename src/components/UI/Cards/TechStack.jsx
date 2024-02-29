@@ -5,7 +5,7 @@ const TechStack = (props) => {
   return (
     <div className="techStack" title={props.name}>
       <div>
-        <img src={props.image} alt="TechTool" />
+        <span>{props.icon}</span>
       </div>
       <div>
         <p className="stackName">{props.name}</p>

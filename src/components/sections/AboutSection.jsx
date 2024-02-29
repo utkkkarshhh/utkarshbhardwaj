@@ -1,17 +1,20 @@
 import "./AboutSection.css";
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeUp } from "@fortawesome/free-solid-svg-icons";
+import React, { useContext } from "react";
 import image from "../../img/utkarsh-img.png";
-import Wave from "../../img/header-wave.png";
-
+import DayHeaderWave from "../../img/header-wave.png";
+import NightHeaderWave from "../../img/nightHeaderWave.png";
+import ModeContext from "../store/ModeContext";
 
 const AboutSection = () => {
+  const { darkMode } = useContext(ModeContext);
   return (
     <>
-      {" "}
       <div class="header-wave">
-        <img src={Wave} alt="Header Wave"></img>
+        {darkMode ? (
+          <img src={DayHeaderWave} alt="Header Wave"></img>
+        ) : (
+          <img src={NightHeaderWave} alt="Night"></img>
+        )}
       </div>
       <div className="about-section" id="about-section">
         <div className="information">

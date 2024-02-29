@@ -1,3 +1,9 @@
+import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaJava } from "react-icons/fa";
+import { SiExpress, SiMongodb, SiMysql, SiRedux } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BsBootstrapFill } from "react-icons/bs";
+import { DiJqueryLogo } from "react-icons/di";
+
 export const data = [
   {
     id: "UI Clones",
@@ -58,36 +64,16 @@ export const data = [
 ];
 
 export let techstack = [
-  { name: "HTML", image: require("../../img/techstack/html.png") },
-  { name: "CSS", image: require("../../img/techstack/css.png") },
-  {
-    name: "JavaScript",
-    image: require("../../img/techstack/js.png"),
-  },
-  {
-    name: "Bootstrap",
-    image: require("../../img/techstack/bootstrap.png"),
-  },
-  { name: "jQuery", image: require("../../img/techstack/jquery.png") },
-  {
-    name: "NodeJS",
-    image: require("../../img/techstack/node-js.png"),
-  },
-  { name: "ExpressJS", image: require("../../img/techstack/express.png") },
-  { name: "MongoDB", image: require("../../img/techstack/mongo.png") },
-  { name: "SQL", image: require("../../img/techstack/mysql.png") },
-  {
-    name: "React",
-    image: require("../../img/techstack/react.png"),
-  },
-  { name: "Redux", image: require("../../img/techstack/redux.png") },
-  {
-    name: "Java",
-    image: require("../../img/techstack/java.png"),
-    width: "120px",
-  },
-  {
-    name: "WordPress",
-    image: require("../../img/techstack/wp.png"),
-  },
+  { name: "HTML", icon: <FaHtml5 /> },
+  { name: "CSS", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <IoLogoJavascript /> },
+  { name: "Bootstrap", icon: <BsBootstrapFill /> },
+  { name: "jQuery", icon: <DiJqueryLogo /> },
+  { name: "NodeJS", icon: <FaNodeJs /> },
+  { name: "ExpressJS", icon: <SiExpress /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "SQL", icon: <SiMysql /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "Java", icon: <FaJava /> },
 ];

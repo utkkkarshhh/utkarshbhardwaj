@@ -6,14 +6,17 @@ import {
   faTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import VectorImage from "../../img/3301603.png";
 
 const HeroSection = () => {
   return (
     <div className="hero">
       <div className="hero-content">
         <div className="left-section">
-          <h1>Utkarsh Bhardwaj</h1>
-          <p>Crafting enticing digital products through design and code</p>
+          <h1 className="heroHeading">Utkarsh Bhardwaj</h1>
+          <p className="heroDescription">
+            Crafting enticing digital products through design and code
+          </p>
           <div className="social-icons">
             <FontAwesomeIcon icon={faFacebookF} />
             <FontAwesomeIcon icon={faTwitter} />
@@ -21,7 +24,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="right-section">
-          <img src="https://via.placeholder.com/400x400" alt="Profile" />
+          <img className="VectorImage" src={VectorImage} alt="Vector" />
         </div>
       </div>
     </div>

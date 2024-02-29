@@ -1,26 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import ModeButton from "../UI/Buttons/ModeButton";
+import ModeContext from "../store/ModeContext";
 
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState("Home");
-  const [darkMode, setDarkMode] = useState(true);
+
+  const { onToggle, darkMode } = useContext(ModeContext);
 
   const clickHandler = (event) => {
     setSelectedItem(event.target.innerHTML);
-  };
-
-  const modeHandler = () => {
-    setDarkMode(!darkMode);
-    const body = document.querySelector("body");
-    if (darkMode) {
-      body.classList.add("dark-mode");
-    } else {
-      body.classList.remove("dark-mode");
-    }
   };
 
   useEffect(() => {
@@ -84,8 +76,8 @@ const Navbar = () => {
           >
             <Link to="/contact">Contact</Link>
           </li>
-          <li className="menu-item" onClick={modeHandler}>
-            <ModeButton darkMode={darkMode} modeHandler={modeHandler} />
+          <li className="menu-item" onClick={onToggle}>
+            <ModeButton darkMode={darkMode} modeHandler={onToggle} />
           </li>
         </ul>
       </div>

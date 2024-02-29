@@ -19,7 +19,9 @@ export const ModeContextProvider = (props) => {
   };
 
   return (
-    <ModeContext.Provider value={{ onToggle: darkModeHandler }}>
+    <ModeContext.Provider
+      value={{ onToggle: darkModeHandler, darkMode: darkMode }}
+    >
       {props.children}
     </ModeContext.Provider>
   );

@@ -33,6 +33,7 @@
   border-radius: 48px;
   transition: all 0.6s ease-in-out;
   background: rgba(255, 255, 255, 0.25);
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
@@ -43,6 +44,7 @@
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.8);
   transition: all 0.6s ease-in-out;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
 }
 
 ul {
@@ -58,7 +60,7 @@ ul {
 }
 
 .menu-item {
-  padding: 20px 10px;
+  padding: 10px 10px;
   margin: 0px 10px;
 }
 
@@ -80,20 +82,28 @@ ul {
 
 .dark-mode {
   color: white;
-  background-color: #243447;
+  background-color: #2a2d2d;
 
-  .menu-container {
-    background-color: #243447;
-  }
   .menu-container-scrolled {
-    background-color: #243447;
+    background-color: #161818;
   }
+
   .hero {
-    background-color: #243447;
+    background-color: #161818;
     background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
   }
+
   .header-wave img {
-    background-color: #243447;
+    background-color: #161818;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+  }
+
+  .footer-section {
+    background-color: #161818;
+    background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+  }
+  .footerWave {
+    background-color: #161818;
     background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
   }
 }

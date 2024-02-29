@@ -21,7 +21,7 @@ const ModeButton = ({ darkMode, modeHandler }) => {
         type="checkbox"
         className="inputModeButton"
         onChange={modeHandler}
-        checked={darkMode}
+        checked={!darkMode}
       />
       <span className="sliderModeButton"></span>
     </div>
