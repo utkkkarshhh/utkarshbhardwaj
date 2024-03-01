@@ -32,4 +32,10 @@
   .tech-stack-section {
     margin: auto auto 30px auto;
   }
+  .tech-stack-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./FilterSlider.css";
 
 function FilterSlider({ currentFilter }) {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Fullstack");
 
   const clickHandler = (filter) => {
     setActiveFilter(filter);

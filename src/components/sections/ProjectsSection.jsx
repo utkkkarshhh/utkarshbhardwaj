@@ -5,7 +5,7 @@ import { data } from "../data/ProjectsList";
 import FilterSlider from "../UI/Buttons/FilterSlider";
 
 const ProjectsSection = () => {
-  const [activeFilter, setActiveFilter] = useState("All");
+  const [activeFilter, setActiveFilter] = useState("Fullstack");
 
   const handleFilterChange = (filter) => {
     setActiveFilter(filter);
@@ -25,17 +25,17 @@ const ProjectsSection = () => {
 
       {filteredData.map((item, index) => {
         return (
-            <Project
-              projectname={item.name}
-              techName1={item["tech-name"]["tech-name1"]}
-              techName2={item["tech-name"]["tech-name2"]}
-              techName3={item["tech-name"]["tech-name3"]}
-              projectDescription={item.description}
-              codebtn={item.codebtn}
-              demobtn={item.demobtn}
-              imagesrc={item.imagePath}
-              key={index}
-            />
+          <Project
+            projectname={item.name}
+            techName1={item["tech-name"]["tech-name1"]}
+            techName2={item["tech-name"]["tech-name2"]}
+            techName3={item["tech-name"]["tech-name3"]}
+            projectDescription={item.description}
+            codebtn={item.codebtn}
+            demobtn={item.demobtn}
+            imagesrc={item.imagePath}
+            key={index}
+          />
         );
       })}
     </div>

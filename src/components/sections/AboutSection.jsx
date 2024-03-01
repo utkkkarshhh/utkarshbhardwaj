@@ -22,13 +22,13 @@ const AboutSection = () => {
             <span className="heading-span">about</span> me
           </h1>
           <p>
-            Meet Utkarsh Bhardwaj, a highly motivated 1st year Masters student
+            Meet Utkarsh Bhardwaj, a highly motivated Final year Masters student
             in Computer Applications and Science. With a passion for Full Stack
             Development, UX design and Project Management, Utkarsh is a true
             tech enthusiast <br /> <br />
             But his interests don't end there - when he's not busy coding, you
             might find Utkarsh indulging in his love for content creation or
-            exploring the intricacies of world geopolitics. In fact, Utkarsh is
+            exploring the complexities of world geopolitics. In fact, Utkarsh is
             also a talented freelance video editor and content strategist.{" "}
             <br />
             <br />
@@ -37,16 +37,14 @@ const AboutSection = () => {
             work. His dedication and drive are sure to make him a valuable asset
             to any team or project he takes on.
             <br /> <br />
-            More about Utkarsh 😛 :
+            More about <b>Utkarsh</b> 😛 :
             <ul>
               <br />
               <li>
-                {" "}
                 Time's magazine <b>Person of the Year 2006.</b>
               </li>
               <li>
-                {" "}
-                More than 20k+ lines of contribution on various free education
+                More than 5k+ lines of contribution on various free education
                 platform.
               </li>
               <li> Open-Source Contributor to Plone.</li>
@@ -54,11 +52,10 @@ const AboutSection = () => {
                 Experience in building strong social media presence via content
                 and strategy.
               </li>
-            </ul>{" "}
+            </ul>
             <br />
             <b>
-              *Currently looking for a full-time internship role for Summer
-              2023*
+              *Currently looking for full-time and internship opportunites!!*
             </b>
           </p>
         </div>

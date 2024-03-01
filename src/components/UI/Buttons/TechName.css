@@ -1,15 +1,31 @@
 .tech-item-name {
-    width:fit-content;
-    border-radius: 14px;
-    background-color: grey;
-    padding: 5px 10px;
-    color: white;
-    font-weight: 300;
-    margin-right: 10px ;
-    transition: 0.8s;
+  width: fit-content;
+  border-radius: 14px;
+  background-color: grey;
+  padding: 5px 10px;
+  color: white;
+  font-weight: 300;
+  margin-right: 10px;
+  transition: 0.8s;
 }
 
-.tech-item-name:hover{
-    background-color: black;
-    color: white;
+.tech-item-name:hover {
+  background-color: #1da1f2;
+  color: white;
+}
+
+.tech-item-name-day {
+  background-color: #1da1f2;
+  transition: 0.8s;
+  color: white;
+  width: fit-content;
+  border-radius: 14px;
+  padding: 5px 10px;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.tech-item-name-day:hover {
+  background-color: black;
+  color: white;
 }

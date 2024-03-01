@@ -9,6 +9,7 @@
 }
 
 .back2Top {
+  padding: 20px;
   display: flex;
   justify-content: center;
   bottom: 20px;

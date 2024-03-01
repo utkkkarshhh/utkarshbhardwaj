@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 import VectorImage from "../../img/3301603.png";
 import ModeContext from "../store/ModeContext";
@@ -15,10 +16,12 @@ const HeroSection = () => {
           </p>
           <div className="heroButtons">
             <button className={darkMode ? "heroButton1" : "darkModeButton"}>
-              Download Resume
+              <a href="https://www.linkedin.com/in/utkkkarshhh">
+                Download Resume
+              </a>
             </button>
             <button className={darkMode ? "heroButton1" : "darkModeButton"}>
-              Contact Me
+              <Link to="/contact">Contact Me</Link>
             </button>
           </div>
         </div>

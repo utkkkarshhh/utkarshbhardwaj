@@ -15,7 +15,9 @@ const Header = () => {
 
   return (
     <header
-      className={`${styles.header} ${darkMode ? styles["dark-mode"] : styles["light-mode"]}`}
+      className={`${styles.header} ${
+        darkMode ? styles["dark-mode"] : styles["light-mode"]
+      }`}
     >
       <div className={styles.headerLeft}>
         <img className={styles.logo} src={Logo} alt="Logo" />
@@ -24,7 +26,11 @@ const Header = () => {
         <Link
           to="/"
           className={`${styles.headerLink} ${
-            selectedItem === "Home" ? styles.active : ""
+            selectedItem === "Home"
+              ? !darkMode
+                ? styles.activeNight
+                : styles.activeDay
+              : ""
           }`}
           onClick={() => handleClick("Home")}
         >
@@ -33,7 +39,11 @@ const Header = () => {
         <Link
           to="/portfolio"
           className={`${styles.headerLink} ${
-            selectedItem === "Portfolio" ? styles.active : ""
+            selectedItem === "Portfolio"
+              ? !darkMode
+                ? styles.activeNight
+                : styles.activeDay
+              : ""
           }`}
           onClick={() => handleClick("Portfolio")}
         >
@@ -42,7 +52,11 @@ const Header = () => {
         <Link
           to="/contact"
           className={`${styles.headerLink} ${
-            selectedItem === "Contact" ? styles.active : ""
+            selectedItem === "Contact"
+              ? !darkMode
+                ? styles.activeNight
+                : styles.activeDay
+              : ""
           }`}
           onClick={() => handleClick("Contact")}
         >
