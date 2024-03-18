@@ -10,6 +10,7 @@ import { DiJqueryLogo } from "react-icons/di";
 // GhostMail
 // BookLibrary
 // E-Commerce Store
+// Movie Review Website
 // Timeli App
 // Keeper
 // Random Quote Generator
@@ -77,6 +78,20 @@ export const data = [
     codebtn: "",
     demobtn: "",
     imagePath: require("../../img/projects/Other/DApp.png"),
+  },
+  {
+    id: "Fullstack",
+    name: "MovieReview: Share Movies and Reviews",
+    "tech-name": {
+      "tech-name1": "ReactJS",
+      "tech-name2": "NodeJs",
+      "tech-name3": "Supabase",
+    },
+    description:
+      "Movie Review app allowing users to share reviews and movies, Supabase integrated to act as database providing realtime CRUD features. (Made as internship assessment project.)",
+    codebtn: "https://github.com/utkkkarshhh/sassMonk",
+    demobtn: "https://sass-monk-client.vercel.app/",
+    imagePath: require("../../img/projects/Web/MovieReview.png"),
   },
   {
     id: "Fullstack",
