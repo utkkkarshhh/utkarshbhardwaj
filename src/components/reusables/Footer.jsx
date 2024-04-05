@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -27,15 +26,11 @@ function Footer() {
           <img src={NightFooterWave} alt="Night"></img>
         )}
       </div>
-      <a onClick={clickHandler} className="back2Top fa fa-sort-up fa-2x">
+      <span onClick={clickHandler} className="back2Top fa fa-sort-up fa-2x">
         <FontAwesomeIcon icon={faSortUp} />
-      </a>
+      </span>
       <div className="socials-footer">
-        <a
-          href="https://www.instagram.com/utkkkarshhh/"
-          title="Instagram"
-          target="_blank"
-        >
+        <a href="https://www.instagram.com/utkkkarshhh/" title="Instagram">
           <FontAwesomeIcon
             icon={faInstagram}
             className="fa fa-instagram fa-2x"
@@ -49,22 +44,14 @@ function Footer() {
             aria-hidden="true"
           />
         </a>
-        <a
-          href="https://github.com/utkkkarshhh/"
-          title="Github"
-          target="_blank"
-        >
+        <a href="https://github.com/utkkkarshhh/" title="Github">
           <FontAwesomeIcon
             icon={faGithub}
             className="fa fa-github fa-2x"
             aria-hidden="true"
           />
         </a>
-        <a
-          href="https://www.linkedin.com/in/utkkkarshhh/"
-          title="LinkedIn"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/utkkkarshhh/" title="LinkedIn">
           <FontAwesomeIcon
             icon={faLinkedin}
             className="fa fa-linkedin fa-2x"

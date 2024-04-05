@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Project from "../UI/Cards/Project";
-import "./ProjectsSection.css";
 import { data } from "../data/ProjectsList";
 import FilterSlider from "../UI/Buttons/FilterSlider";
 

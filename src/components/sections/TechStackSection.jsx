@@ -1,5 +1,4 @@
 import React from "react";
-import "./TechStackSection.css";
 import TechStack from "../UI/Cards/TechStack";
 import { techstack } from "../data/ProjectsList";
 

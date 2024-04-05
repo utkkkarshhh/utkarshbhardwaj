@@ -1,4 +1,3 @@
-import "./AboutSection.css";
 import React, { useContext } from "react";
 import image from "../../img/utkarsh-img.png";
 import DayHeaderWave from "../../img/header-wave.png";

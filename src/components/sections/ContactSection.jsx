@@ -1,5 +1,4 @@
 import React from "react";
-import "./ContactSection.css";
 import Button from "../UI/Buttons/Button";
 
 const ContactSection = () => {

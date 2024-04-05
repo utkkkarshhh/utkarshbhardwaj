@@ -1,0 +1,559 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  z-index: -1;
+}
+
+//Header
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: 300ms ease-in;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.logo {
+  height: 50px;
+}
+
+.headerCenter {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headerLink {
+  text-decoration: none;
+  padding: 10px;
+}
+
+.headerLink.active {
+  background-color: #1da1f2;
+  border-radius: 48px;
+  color: white;
+}
+
+.hamburgerMenu {
+  display: none !important;
+}
+
+.headerRight {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dark-mode {
+  color: white;
+  background-color: #2c2e2e;
+
+  .headerLink.active {
+    background-color: rgba(34, 135, 198, 0.5);
+    border-radius: 12px;
+    color: white;
+  }
+}
+
+.dark-mode .header {
+  background-color: #161818;
+
+  .headerLink.active {
+    background-color: rgba(34, 135, 198, 0.5);
+    border-radius: 12px;
+    color: white;
+  }
+}
+
+.dark-mode .hero {
+  background-color: #161818;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
+
+.dark-mode .header-wave img {
+  background-color: #161818;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
+
+.dark-mode .footer-section {
+  background-color: #161818;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
+
+.dark-mode .footerWave {
+  background-color: #161818;
+  background-image: url("https://www.transparenttextures.com/patterns/black-scales.png");
+}
+
+.headerLink {
+  transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+}
+
+/* Add animation for hamburger icon */
+.hamburgerMenuIcon {
+  transition: color 0.3s, transform 0.3s;
+}
+
+.hamburgerMenuIcon:hover {
+  color: #1da1f2;
+  cursor: pointer;
+}
+
+.hamburgerMenuItem {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .headerCenter {
+    display: none;
+  }
+
+  .hamburgerMenuIcon {
+    margin-left: 20px;
+  }
+
+  .hamburgerMenuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headerLink {
+    font-size: 12px;
+  }
+
+  .headerCenter {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburgerMenu {
+    display: block !important;
+    font-size: 30px;
+    color: #fff;
+  }
+  .hamburgerMenuIcon {
+    margin: 0px;
+    margin-left: 20px;
+    transition: 100ms ease-in-out;
+  }
+  .hamburgerMenuIcon:hover {
+    color: #1da1f2;
+    cursor: pointer;
+  }
+}
+
+//Footer
+
+.footer-section {
+  padding: 0px 0 10px 0;
+  background-color: #1da1f2;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  width: 100vw;
+}
+
+.back2Top {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  bottom: 20px;
+  right: 20px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer-section .socials-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.socials-footer .fa {
+  color: white;
+  padding: 10px 10px;
+}
+
+.socials-footer .fa:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+.footer-hr {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-section #creds {
+  padding-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer-section #creds a {
+  color: white;
+}
+
+.footer-section #creds a:hover {
+  color: #000;
+  transition: 0.5s;
+}
+
+// About Section
+
+.about-section {
+  padding: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.heading .heading-span {
+  font-weight: bolder;
+  color: #1da1f2;
+  font-size: 34px;
+}
+
+.information {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.picture img {
+  width: 100%;
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .about-section {
+    padding: 30px;
+  }
+
+  .information {
+    margin-bottom: 30px;
+  }
+
+  .picture {
+    margin-bottom: 30px;
+  }
+}
+
+.header-wave img {
+  width: 100%;
+  background-color: #1da1f2;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+}
+
+//Contact Section
+
+.heading {
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 40px;
+  font-weight: lighter;
+}
+
+.heading .heading-span {
+  font-weight: bolder;
+  color: #1da1f2;
+  font-size: 58px;
+}
+
+.contact-section {
+  padding: 0px 60px 60px 60px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    padding: 0px 30px 30px 30px;
+  }
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  padding: 5px 8px;
+  margin: 30px auto;
+  width: 50%;
+  display: block;
+  color: black;
+  border-radius: 50px;
+  padding: 20px;
+  outline: none;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 90%;
+    padding: 15px 10px;
+  }
+
+  .heading {
+    font-size: 20px;
+  }
+}
+
+::placeholder {
+  color: black;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  margin: 10px 10px;
+  opacity: 0.4;
+}
+
+//Hero Section
+.hero {
+  height: 100vh;
+  text-align: center;
+  background-color: #1da1f2;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  margin: auto auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  padding: auto 200px;
+  margin: auto auto;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+.heroHeading {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin: 5px auto;
+}
+
+.heroDescription {
+  font-size: 16px;
+  color: white;
+}
+
+.heroButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroButton1 {
+  font-family: Poppins;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #3a4a53;
+  color: white;
+  transition: 500ms;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.heroButton1:hover {
+  background-color: white;
+  color: black;
+}
+
+.darkModeButton {
+  font-family: Poppins;
+  padding: 10px 20px;
+  margin: 10px 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #1da1f2;
+  color: white;
+  transition: 500ms;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.darkModeButton:hover {
+  background-color: #3a4a53;
+  color: white;
+}
+
+.VectorImage {
+  max-width: 60%;
+  animation: upDown 1000ms infinite alternate;
+  z-index: -0;
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+//Project Section
+
+.projects-section {
+  padding: 0px 60px 60px 60px;
+}
+
+@media only screen and (max-width: 600px) {
+  .projects-section {
+    padding: 0px 30px 30px 30px;
+  }
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 40px;
+  font-weight: lighter;
+}
+
+.heading .heading-span {
+  font-weight: bolder;
+  color: #1da1f2;
+  font-size: 58px;
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card {
+  animation: fadeSlideUp 0.5s ease-out;
+  animation-delay: calc(var(--index) * 0.1s);
+}
+
+//Tech Stack Section
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin: 0;
+  padding-bottom: 30px;
+}
+
+.heading .heading-span {
+  font-weight: bolder;
+  color: #1da1f2;
+  font-size: 58px;
+}
+
+.tech-stack-section {
+  margin: 40px 200px 60px 200px;
+}
+
+.tech-stack-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tech-stack-items .tech-stack {
+  padding: 20px 20px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-stack-section {
+    margin: auto auto 30px auto;
+  }
+  .tech-stack-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

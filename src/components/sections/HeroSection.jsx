@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import "./HeroSection.css";
 import VectorImage from "../../img/3301603.png";
 import ModeContext from "../store/ModeContext";
 
