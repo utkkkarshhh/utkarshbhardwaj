@@ -21,6 +21,7 @@ const ProjectsSection = () => {
             demobtn={item.demobtn}
             imagesrc={item.imagePath}
             key={index}
+            redirect={item.redirect}
           />
         );
       })}

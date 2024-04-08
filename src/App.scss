@@ -212,14 +212,15 @@ img {
   padding-bottom: 30px;
 }
 
-.socials-footer .fa {
-  color: white;
-  padding: 10px 10px;
+.footer-item {
+  font-size: 30px;
+  margin: auto 15px;
+  transition: 200ms ease;
 }
 
-.socials-footer .fa:hover {
-  color: #000;
-  transition: 0.5s;
+.footer-item:hover {
+  cursor: pointer;
+  color: black;
 }
 
 .footer-hr {
@@ -415,6 +416,8 @@ input {
   color: white;
   margin: 5px 0;
   text-align: left;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .heroDescription {
@@ -425,12 +428,25 @@ input {
 
 .niches {
   color: rgb(234, 219, 17);
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .heroButtons {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+
+.hs-item {
+  font-size: 25px;
+  margin: 15px;
+  color: white;
+  transition: 300ms;
+}
+
+.hs-item:hover {
+  color: black;
 }
 
 .heroButton1 {
@@ -477,12 +493,14 @@ input {
   z-index: -0;
 }
 
-@keyframes upDown {
-  0% {
-    transform: translateY(0);
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
   }
-  100% {
-    transform: translateY(-10px);
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -595,4 +613,52 @@ input {
     align-items: center;
     flex-wrap: wrap;
   }
+}
+
+//Project Page
+
+.project-page {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-page-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  cursor: pointer;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-page-project-name {
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+    -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.project-page-go-back {
+  color: white;
+  background-color: black;
+  padding: 20px 20px;
+  border-radius: 22px;
+}
+
+.project-page-project-share {
+  color: white;
+  background-color: black;
+  padding: 20px 20px;
+  border-radius: 22px;
+}
+
+.project-page-body-header {
+  text-align: center;
+}
+
+.project-page-body {
+  margin: auto 300px;
 }

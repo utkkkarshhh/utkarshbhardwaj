@@ -25,7 +25,6 @@ import { DiJqueryLogo } from "react-icons/di";
 
 export let featuredProjects = [
   {
-    id: "Fullstack",
     name: "Ghost Mail: Connect Anonymously",
     "tech-name": {
       "tech-name1": "ReactJS",
@@ -37,34 +36,35 @@ export let featuredProjects = [
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),
+    redirect: "/projects/Project1",
   },
   {
-    id: "Fullstack",
-    name: "Ghost Mail: Connect Anonymously",
+    name: "Decentralized Election: Ethereum based Election Dapp",
     "tech-name": {
       "tech-name1": "ReactJS",
       "tech-name2": "NodeJS",
-      "tech-name3": "PostgresSQL",
+      "tech-name3": "Solidity",
     },
     description:
       "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
-    imagePath: require("../../img/projects/Web/GhostMail.png"),
+    imagePath: require("../../img/projects/Other/DApp.png"),
+    redirect: "/projects/Project2",
   },
   {
-    id: "Fullstack",
-    name: "Ghost Mail: Connect Anonymously",
+    name: "Multithreaded Task Scheduler using Java",
     "tech-name": {
-      "tech-name1": "ReactJS",
-      "tech-name2": "NodeJS",
-      "tech-name3": "PostgresSQL",
+      "tech-name1": "Core Java",
+      "tech-name2": "Maven",
+      "tech-name3": "Postgres SQL",
     },
     description:
       "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),
+    redirect: "/projects/:multithreaded-task-scheduler",
   },
 ];
 

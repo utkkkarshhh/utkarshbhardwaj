@@ -1,11 +1,9 @@
 import React, { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInstagram,
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { faSortUp } from "@fortawesome/free-solid-svg-icons";
 import DayFooterWave from "../../img/footer-wave.png";
 import NightFooterWave from "../../img/nightFooterWave.png";
@@ -30,33 +28,33 @@ function Footer() {
         <FontAwesomeIcon icon={faSortUp} />
       </span>
       <div className="socials-footer">
-        <a href="https://www.instagram.com/utkkkarshhh/" title="Instagram">
-          <FontAwesomeIcon
-            icon={faInstagram}
-            className="fa fa-instagram fa-2x"
-            aria-hidden="true"
-          />
+        <a
+          className="footer-item"
+          href="https://www.instagram.com/utkkkarshhh/"
+          title="Instagram"
+        >
+          <FaInstagram />
         </a>
-        <a href="https://www.twitter.com/utkkkarshhh/" title="Twitter">
-          <FontAwesomeIcon
-            icon={faTwitter}
-            className="fa fa-twitter fa-2x"
-            aria-hidden="true"
-          />
+        <a
+          className="footer-item"
+          href="https://www.twitter.com/utkkkarshhh/"
+          title="Twitter"
+        >
+          <FaXTwitter />
         </a>
-        <a href="https://github.com/utkkkarshhh/" title="Github">
-          <FontAwesomeIcon
-            icon={faGithub}
-            className="fa fa-github fa-2x"
-            aria-hidden="true"
-          />
+        <a
+          className="footer-item"
+          href="https://github.com/utkkkarshhh/"
+          title="Github"
+        >
+          <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/utkkkarshhh/" title="LinkedIn">
-          <FontAwesomeIcon
-            icon={faLinkedin}
-            className="fa fa-linkedin fa-2x"
-            aria-hidden="true"
-          />
+        <a
+          className="footer-item"
+          href="https://www.linkedin.com/in/utkkkarshhh/"
+          title="LinkedIn"
+        >
+          <FaLinkedin />
         </a>
       </div>
       <hr className="footer-hr" />
