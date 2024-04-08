@@ -1,28 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Project from "../UI/Cards/Project";
-import { data } from "../data/ProjectsList";
-import FilterSlider from "../UI/Buttons/FilterSlider";
+import { featuredProjects } from "../data/ProjectsList";
+import { Link } from "react-router-dom";
 
 const ProjectsSection = () => {
-  const [activeFilter, setActiveFilter] = useState("Fullstack");
-
-  const handleFilterChange = (filter) => {
-    setActiveFilter(filter);
-  };
-
-  const filteredData =
-    activeFilter === "All"
-      ? data
-      : data.filter((item) => item.id === activeFilter);
   return (
     <div className="projects-section" id="projects-section">
       <h1 className="heading">
-        <span className="heading-span">projects</span>{" "}
+        <span className="heading-span"> featured</span> projects
       </h1>
-
-      <FilterSlider currentFilter={handleFilterChange} />
-
-      {filteredData.map((item, index) => {
+      {featuredProjects.map((item, index) => {
         return (
           <Project
             projectname={item.name}
@@ -37,6 +24,11 @@ const ProjectsSection = () => {
           />
         );
       })}
+      <Link to="/portfolio">
+        <p className="watch-more-portfolio">
+          Click here to watch complete portfolio.
+        </p>
+      </Link>
     </div>
   );
 };

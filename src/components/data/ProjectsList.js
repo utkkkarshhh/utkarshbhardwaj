@@ -23,6 +23,51 @@ import { DiJqueryLogo } from "react-icons/di";
 //WaterMyPlants - IOT
 //Decentralised Election - Blockchain
 
+export let featuredProjects = [
+  {
+    id: "Fullstack",
+    name: "Ghost Mail: Connect Anonymously",
+    "tech-name": {
+      "tech-name1": "ReactJS",
+      "tech-name2": "NodeJS",
+      "tech-name3": "PostgresSQL",
+    },
+    description:
+      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+    codebtn: "https://github.com/utkkkarshhh/ghost-mail",
+    demobtn: "https://ghost-mail.vercel.app/",
+    imagePath: require("../../img/projects/Web/GhostMail.png"),
+  },
+  {
+    id: "Fullstack",
+    name: "Ghost Mail: Connect Anonymously",
+    "tech-name": {
+      "tech-name1": "ReactJS",
+      "tech-name2": "NodeJS",
+      "tech-name3": "PostgresSQL",
+    },
+    description:
+      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+    codebtn: "https://github.com/utkkkarshhh/ghost-mail",
+    demobtn: "https://ghost-mail.vercel.app/",
+    imagePath: require("../../img/projects/Web/GhostMail.png"),
+  },
+  {
+    id: "Fullstack",
+    name: "Ghost Mail: Connect Anonymously",
+    "tech-name": {
+      "tech-name1": "ReactJS",
+      "tech-name2": "NodeJS",
+      "tech-name3": "PostgresSQL",
+    },
+    description:
+      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+    codebtn: "https://github.com/utkkkarshhh/ghost-mail",
+    demobtn: "https://ghost-mail.vercel.app/",
+    imagePath: require("../../img/projects/Web/GhostMail.png"),
+  },
+];
+
 export const data = [
   {
     id: "Fullstack",
