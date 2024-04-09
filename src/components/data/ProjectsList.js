@@ -29,28 +29,36 @@ export let featuredProjects = [
     "tech-name": {
       "tech-name1": "ReactJS",
       "tech-name2": "NodeJS",
-      "tech-name3": "PostgresSQL",
+      "tech-name3": "Socket.io",
+      "tech-name4": "Firebase",
+      "tech-name5": "ExpressJS",
+      "tech-name6": "PostgresSQL",
     },
     description:
-      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+      "Ghost Mail is a secure messaging application enabling users to communicate anonymously. Built with Socket.io, React.js, and Node.js, it ensures privacy and confidentiality for users while facilitating seamless connections. Users can exchange messages without revealing their identities, ensuring secure and confidential communication channels.",
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),
     redirect: `/projects/ghost-mail`,
   },
+
   {
     name: "Decentralized Election: Ethereum based Election Dapp",
     "tech-name": {
       "tech-name1": "ReactJS",
       "tech-name2": "NodeJS",
       "tech-name3": "Solidity",
+      "tech-name4": "Web3",
+      "tech-name5": "MongoDB",
     },
     description:
-      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+      "The Decentralized Election DApp revolutionizes voting systems by leveraging Ethereum blockchain technology. With React.js, Solidity Smart Contracts, and Truffle Suite, it ensures transparency and integrity in electoral processes. Empowering users to cast votes securely, it eliminates intermediaries and enhances trust in democratic practices through decentralization.",
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
-    imagePath: require("../../img/projects/Other/DApp.png"),
+    imagePath: require("../../img/projects/UI/NetflixUI.png"),
     redirect: "/projects/decentralised-election",
+    caution:
+      "*This project is meant to be run locally, you can just access UI through this link but functionality is not available*",
   },
   {
     name: "Multithreaded Task Scheduler using Java",
@@ -60,7 +68,7 @@ export let featuredProjects = [
       "tech-name3": "Postgres SQL",
     },
     description:
-      "Anonymous messaging platform developed with ReactJS, NodeJS, and PostgreSQL.",
+      "This Java-based Multithreaded Task Scheduler optimizes task management by efficiently allocating computing resources. Utilizing multithreading techniques, it enhances system performance and responsiveness. Designed with scalability in mind, it enables concurrent execution of tasks, maximizing throughput and minimizing latency for enhanced computational efficiency.",
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),

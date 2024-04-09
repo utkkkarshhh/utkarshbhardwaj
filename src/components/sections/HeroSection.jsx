@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
-import VectorImage from "../../img/3301603.png";
+import image from "../../img/utkarsh-img.png";
 import ModeContext from "../store/ModeContext";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -78,7 +78,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="right-section">
-        <img className="VectorImage" src={VectorImage} alt="Vector" />
+        <img className="hero-img" src={image} alt="Utkarsh" />
       </div>
     </div>
   );

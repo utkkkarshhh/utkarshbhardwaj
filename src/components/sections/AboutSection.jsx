@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import image from "../../img/utkarsh-img.png";
+import About from "../../img/about.png";
 import DayHeaderWave from "../../img/header-wave.png";
 import NightHeaderWave from "../../img/nightHeaderWave.png";
 import ModeContext from "../store/ModeContext";
@@ -8,18 +8,18 @@ const AboutSection = () => {
   const { darkMode } = useContext(ModeContext);
   return (
     <>
-      <div class="header-wave">
+      <div className="header-wave">
         {darkMode ? (
           <img src={DayHeaderWave} alt="Header Wave"></img>
         ) : (
           <img src={NightHeaderWave} alt="Night"></img>
         )}
       </div>
-      <div className="about-section" id="about-section">
-        <div className="information">
-          <h1 className="heading">
-            <span className="heading-span">about</span> me
-          </h1>
+      <h1 className="heading">
+        <span className="heading-span">about</span> me
+      </h1>
+      <div className="about-section">
+        <div className="about-info">
           <p>
             Meet Utkarsh Bhardwaj, a highly motivated Final year Masters student
             in Computer Applications and Science. With a passion for Full Stack
@@ -58,8 +58,8 @@ const AboutSection = () => {
             </b>
           </p>
         </div>
-        <div className="picture">
-          <img className="about-image" src={image} alt="Utkarsh" />
+        <div className="about-image-section">
+          <img className="about-image" src={About} alt="Vector" />
         </div>
       </div>
     </>

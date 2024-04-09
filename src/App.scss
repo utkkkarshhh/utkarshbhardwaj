@@ -75,6 +75,12 @@ img {
   color: white;
   background-color: #2c2e2e;
 
+  .niches {
+    color: #1da1f2;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
+      -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
   .headerLink.active {
     background-color: rgba(34, 135, 198, 0.5);
     border-radius: 12px;
@@ -83,10 +89,10 @@ img {
 }
 
 .dark-mode .header {
-  background-color: #161818;
+  background-color: #1da1f2;
 
   .headerLink.active {
-    background-color: rgba(34, 135, 198, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 12px;
     color: white;
   }
@@ -110,10 +116,6 @@ img {
 .dark-mode .footerWave {
   background-color: #161818;
   background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
-}
-
-.headerLink {
-  transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
 }
 
 /* Add animation for hamburger icon */
@@ -247,73 +249,50 @@ img {
   transition: 0.5s;
 }
 
-// About Section
+//////////////////////////////////////////////////////ABOUT SECTION //////////////////////////////////////////////////
 
 .about-section {
-  padding: 60px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.heading {
-  font-size: 30px;
-  font-weight: lighter;
-  margin-bottom: 20px;
-}
-
-.heading .heading-span {
-  font-weight: bolder;
-  color: #1da1f2;
-  font-size: 34px;
-}
-
-.information {
-  width: 100%;
-  max-width: 900px;
-  margin-bottom: 40px;
-}
-
-.picture {
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin: auto 100px;
 }
 
-.picture img {
-  width: 50%;
-  min-width: 300px;
-  background-image: url("./img/utkarsh-img.png");
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: morph 2s ease-in-out infinite;
-  border: 3px solid black;
+.about-image-section {
+  width: 60%;
 }
 
-@keyframes morph {
+.about-image {
+  width: 100%;
+  background-size: cover;
+  animation: upDownAnimation 1s infinite alternate;
+}
+
+@keyframes upDownAnimation {
   0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 40% 60% 70% 30% / 30% 70% 40% 60%;
+    transform: translateY(0);
   }
   100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: translateY(10px);
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .about-section {
-    padding: 30px;
+    flex-direction: column;
+    width: 80%;
+    margin: auto auto;
   }
 
-  .information {
-    margin-bottom: 30px;
+  .about-image {
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 0%;
   }
 
-  .picture {
-    margin-bottom: 30px;
+  .about-image-section {
+    margin: 0px auto 30px;
   }
 }
 
@@ -328,6 +307,7 @@ img {
 .heading {
   text-align: center;
   font-size: 30px;
+  padding-top: 40px;
   padding-bottom: 40px;
   font-weight: lighter;
 }
@@ -349,19 +329,19 @@ img {
   }
 }
 
-input {
+input,
+textarea {
   font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  letter-spacing: 1.5px;
-  padding: 5px 8px;
+  letter-spacing: 0.5px;
+  padding: 1px 8px;
   margin: 30px auto;
-  width: 50%;
+  width: 30%;
   display: block;
   color: black;
+  border: 1px solid #ccc;
   border-radius: 50px;
-  padding: 20px;
+  padding: 10px 10px;
   outline: none;
-  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -379,8 +359,6 @@ input {
   color: black;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-weight: bolder;
-  margin: 10px 10px;
   opacity: 0.4;
 }
 
@@ -388,21 +366,12 @@ input {
 .hero {
   display: flex;
   flex-direction: row-reverse;
+  gap: 200px;
   height: 90vh;
   margin: auto auto;
-  justify-content: space-between;
-  align-items: center;
   padding: auto 200px;
-  text-align: center;
   background-color: #1da1f2;
   background-image: url("https://www.transparenttextures.com/patterns/subtle-white-feathers.png");
-}
-
-.hero-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 200 200px;
-  margin: auto auto;
 }
 
 .herohead {
@@ -443,9 +412,10 @@ input {
 }
 
 .niches {
-  color: rgb(234, 219, 17);
-  text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000,
-    -1px 1px 0 #000, 1px 1px 0 #000;
+  // color: rgb(234, 219, 17);
+  color: black;
+  text-shadow: 3px 3px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+    -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 
 .heroButtons {
@@ -501,50 +471,28 @@ input {
   color: white;
 }
 
-.VectorImage {
-  max-width: 60%;
-  display: block;
-  padding: auto auto;
-  animation: upDown 1500ms infinite alternate;
-  z-index: -0;
-}
-
-@keyframes upDown {
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes slide-down {
-  from {
-    opacity: 0;
-    transform: translateY(-3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.right-section {
+  width: 30%;
+  padding-left: 200px;
 }
 
 .hero-img {
-  background-image: url("./img/utkarsh-img.png");
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 3px solid #2d2e32;
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Initial border radius */
-  height: 35rem;
-  position: relative;
-  width: 35rem;
-  animation: morph 8s ease-in-out infinite; /* Applying morph animation */
+  z-index: 1;
+  width: 100%;
+  animation: upDownAnimation 1s ease-in-out infinite alternate;
 }
 
+@keyframes upDownAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
 @keyframes morph {
   0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Initial border radius */
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
   50% {
     border-radius: 40% 60% 70% 30% / 30% 70% 40% 60%; /* Intermediate border radius */
@@ -561,10 +509,23 @@ input {
     display: 100vh;
     align-items: center;
     justify-content: center;
+    gap: 50px;
   }
 
-  .VectorImage {
-    display: none;
+  .hero-img {
+    width: 200px;
+  }
+
+  .right-section {
+    padding: 0px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+  }
+
+  .niches {
+    font-size: 30px;
   }
 }
 
@@ -712,4 +673,162 @@ input {
 
 .project-page-body {
   margin: auto 300px;
+}
+
+//Featured Projects Section
+
+.fp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 3px solid #ccc;
+  border-radius: 22px;
+  min-height: 300px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.fp-right-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.fp-right {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.fp-tech-name {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fp-img {
+  max-width: 600px;
+  height: auto;
+  object-fit: cover;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+  transition: transform 0.3s ease;
+}
+
+.fp-img:hover {
+  transform: scale(1.01);
+}
+
+.fp-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.fp-btn {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 10px;
+  height: fit-content;
+  padding: 5px 20px;
+  margin: 10px 10px;
+}
+
+.fp-code-btn {
+  background-color: #1da1f2;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  border: white solid;
+  transition: 500ms;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fp-code-btn:hover {
+  background-color: #396f91;
+  transform: scale(1.05);
+}
+
+.fp-live-btn {
+  background-color: black;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  border: white solid;
+  transition: 500ms;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fp-live-btn:hover {
+  background-color: rgb(51, 50, 50);
+  transform: scale(1.05);
+}
+
+.fp-read-btn {
+  background-color: #1da1f2;
+  align-items: center;
+  color: white;
+  border-radius: 12px;
+  border: white solid;
+  transition: 500ms;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fp-read-btn:hover {
+  background-color: #396f91;
+  transform: scale(1.05);
+}
+
+.fp-caution {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.fp-empty {
+  background-color: white;
+  color: white;
+  width: 10%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .fp {
+    flex-direction: column;
+  }
+
+  .fp-right {
+    width: 90%;
+    padding: auto 20px;
+  }
+
+  .fp-right-head {
+    padding: auto auto;
+  }
+
+  .fp-tech-name {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fp-btn {
+    font-size: 9px;
+    padding: 10px 14px;
+    margin: 5px 2px;
+  }
+
+  .fp-tech-name {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+  }
+
+  .fp-short-description p {
+    margin: 0px;
+  }
+
+  .fp-buttons {
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+  }
 }

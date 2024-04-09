@@ -17,7 +17,7 @@ function Footer() {
   };
   return (
     <footer className="footer-section">
-      <div class="header-wave">
+      <div className="header-wave">
         {darkMode ? (
           <img src={DayFooterWave} alt="Footer Wave"></img>
         ) : (
