@@ -16,7 +16,7 @@ const Project3 = () => {
           <IoMdArrowRoundBack />
         </div>
         <div className="project-page-project-name">
-          <h1>Decentralized Election: Ethereum based Dapp</h1>
+          <h1>Multithreaded Task Scheduler using Java</h1>
         </div>
         <div className="project-page-project-share">
           <FaShareNodes />
@@ -24,7 +24,7 @@ const Project3 = () => {
       </div>
       <div className="project-page-body">
         <h1 className="project-page-body-header">
-          Decentralized Election: Ethereum based Dapp
+          Multithreaded Task Scheduler using Java
         </h1>
         <div className="project-page-body-para">
           <p>

@@ -36,7 +36,7 @@ export let featuredProjects = [
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),
-    redirect: "/projects/Project1",
+    redirect: `/projects/ghost-mail`,
   },
   {
     name: "Decentralized Election: Ethereum based Election Dapp",
@@ -50,7 +50,7 @@ export let featuredProjects = [
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Other/DApp.png"),
-    redirect: "/projects/Project2",
+    redirect: "/projects/decentralised-election",
   },
   {
     name: "Multithreaded Task Scheduler using Java",
@@ -64,7 +64,7 @@ export let featuredProjects = [
     codebtn: "https://github.com/utkkkarshhh/ghost-mail",
     demobtn: "https://ghost-mail.vercel.app/",
     imagePath: require("../../img/projects/Web/GhostMail.png"),
-    redirect: "/projects/:multithreaded-task-scheduler",
+    redirect: "/projects/multithreaded-task-scheduler",
   },
 ];
 

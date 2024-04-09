@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const FeaturedProjectCard = ({ props }) => {
   return (
@@ -8,7 +9,9 @@ const FeaturedProjectCard = ({ props }) => {
       </div>
       <div className="fp-right">
         <div className="fp-right-head">
-          <div className="fp-right-title"></div>
+          <Link to={props.redirect}>
+            <div className="fp-right-title">{props.name}</div>
+          </Link>
           <div className="fp-right-tech"></div>
         </div>
         <div className="fp-text">

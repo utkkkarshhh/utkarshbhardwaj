@@ -16,14 +16,16 @@ const Project2 = () => {
           <IoMdArrowRoundBack />
         </div>
         <div className="project-page-project-name">
-          <h1>Project2</h1>
+          <h1>Decentralized Election: Ethereum based Dapp</h1>
         </div>
         <div className="project-page-project-share">
           <FaShareNodes />
         </div>
       </div>
       <div className="project-page-body">
-        <h1 className="project-page-body-header">Project2</h1>
+        <h1 className="project-page-body-header">
+          Decentralized Election: Ethereum based Dapp
+        </h1>
         <div className="project-page-body-para">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

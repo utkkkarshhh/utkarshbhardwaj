@@ -283,8 +283,24 @@ img {
 }
 
 .picture img {
-  width: 100%;
-  max-width: 300px;
+  width: 50%;
+  min-width: 300px;
+  background-image: url("./img/utkarsh-img.png");
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: morph 2s ease-in-out infinite;
+  border: 3px solid black;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 40% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -489,8 +505,17 @@ input {
   max-width: 60%;
   display: block;
   padding: auto auto;
-  animation: upDown 1000ms infinite alternate;
+  animation: upDown 1500ms infinite alternate;
   z-index: -0;
+}
+
+@keyframes upDown {
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 
 @keyframes slide-down {
@@ -501,6 +526,31 @@ input {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.hero-img {
+  background-image: url("./img/utkarsh-img.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #2d2e32;
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Initial border radius */
+  height: 35rem;
+  position: relative;
+  width: 35rem;
+  animation: morph 8s ease-in-out infinite; /* Applying morph animation */
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Initial border radius */
+  }
+  50% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 40% 60%; /* Intermediate border radius */
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; /* Final border radius */
   }
 }
 
@@ -535,6 +585,7 @@ input {
   font-size: 50px;
   padding-bottom: 40px;
   font-weight: lighter;
+  animation: slide-down 1500ms ease-in-out;
 }
 
 .heading .heading-span {

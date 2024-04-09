@@ -1,7 +1,6 @@
 import React from "react";
 import "./Project.css";
 import TechName from "../Buttons/TechName";
-import { Link } from "react-router-dom";
 
 const Project = (props) => {
   return (
@@ -9,9 +8,7 @@ const Project = (props) => {
       <div className="project-card">
         <div className="info-section">
           <div className="project-name">
-            <Link to={props.redirect}>
-              <h1>{props.projectname}</h1>
-            </Link>
+            <h1>{props.projectname}</h1>
           </div>
           <div className="tech-name">
             <TechName techName={props.techName1} />

@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "../UI/Cards/Project";
+// import FeaturedProjectCard from "../UI/Cards/FeaturedProjectCard";
 import { featuredProjects } from "../data/ProjectsList";
 import { Link } from "react-router-dom";
 
