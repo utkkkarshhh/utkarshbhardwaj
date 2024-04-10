@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import ModeButton from "../UI/Buttons/ModeButton";
 import ModeContext from "../store/ModeContext";
 import Logo from "../../img/utkarsh-img.png";
@@ -10,6 +10,19 @@ const Header = () => {
   const { darkMode, onToggle } = useContext(ModeContext);
   const [selectedItem, setSelectedItem] = useState("Home");
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Update selectedItem based on the pathname from the location
+    const pathname = location.pathname;
+    if (pathname === "/") {
+      setSelectedItem("Home");
+    } else if (pathname === "/portfolio") {
+      setSelectedItem("Portfolio");
+    } else if (pathname === "/contact") {
+      setSelectedItem("Contact");
+    }
+  }, [location]);
 
   const handleClick = (itemName) => {
     setSelectedItem(itemName);
@@ -23,7 +36,9 @@ const Header = () => {
   return (
     <header className={`header ${darkMode ? "dark-mode" : "light-mode"}`}>
       <div className="headerLeft">
-        <img className="logo" src={Logo} alt="Logo" />
+        <Link to="/">
+          <img className="logo" src={Logo} alt="Logo" />
+        </Link>
       </div>
       <div className="headerCenter">
         <Link
