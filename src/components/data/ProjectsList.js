@@ -1,8 +1,28 @@
-import { FaHtml5, FaCss3Alt, FaNodeJs, FaReact, FaJava } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiMysql, SiRedux } from "react-icons/si";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaNodeJs,
+  FaReact,
+  FaJava,
+  FaGit,
+  FaNpm,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  SiExpress,
+  SiMongodb,
+  SiRedux,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiSolidity,
+  SiApachemaven,
+} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BsBootstrapFill } from "react-icons/bs";
 import { DiJqueryLogo } from "react-icons/di";
+import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandFirebase } from "react-icons/tb";
+import { RiSupabaseFill } from "react-icons/ri";
 
 // Fullstack, UX/UI, Other, All
 
@@ -296,16 +316,138 @@ export const data = [
 ];
 
 export let techstack = [
-  { name: "HTML", icon: <FaHtml5 /> },
-  { name: "CSS", icon: <FaCss3Alt /> },
-  { name: "JavaScript", icon: <IoLogoJavascript /> },
-  { name: "Bootstrap", icon: <BsBootstrapFill /> },
-  { name: "jQuery", icon: <DiJqueryLogo /> },
-  { name: "NodeJS", icon: <FaNodeJs /> },
-  { name: "ExpressJS", icon: <SiExpress /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "SQL", icon: <SiMysql /> },
-  { name: "React", icon: <FaReact /> },
-  { name: "Redux", icon: <SiRedux /> },
-  { name: "Java", icon: <FaJava /> },
+  {
+    name: "HTML",
+    icon: <FaHtml5 />,
+    category: "frontend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "CSS",
+    icon: <FaCss3Alt />,
+    category: "frontend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "JavaScript",
+    icon: <IoLogoJavascript />,
+    category: "programming languages",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "Bootstrap",
+    icon: <BsBootstrapFill />,
+    category: "frontend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "jQuery",
+    icon: <DiJqueryLogo />,
+    category: "frontend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "NodeJS",
+    icon: <FaNodeJs />,
+    category: "backend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "ExpressJS",
+    icon: <SiExpress />,
+    category: "backend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb />,
+    category: "databases",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "React",
+    icon: <FaReact />,
+    category: "frontend tools",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "Redux",
+    icon: <SiRedux />,
+    category: "frontend tools",
+    color: "#1da1f2",
+  },
+  {
+    name: "Java",
+    icon: <FaJava />,
+    category: "programming languages",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "Typescript",
+    icon: <BiLogoTypescript />,
+    category: "programming languages",
+    color: "rgb(247, 194, 95)",
+  },
+  {
+    name: "NextJS",
+    icon: <SiNextdotjs />,
+    category: "frontend tools",
+    color: "rgb(247, 194, 95)",
+  },
+  {
+    name: "PostgresSQL",
+    icon: <BiLogoPostgresql />,
+    category: "databases",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "NPM",
+    icon: <FaNpm />,
+    category: "other",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "Git",
+    icon: <FaGit />,
+    category: "other",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub />,
+    category: "other",
+    color: "rgb(94, 223, 94)",
+  },
+  {
+    name: "Firebase",
+    icon: <TbBrandFirebase />,
+    category: "databases",
+    color: "rgb(247, 194, 95)",
+  },
+  {
+    name: "Supabase",
+    icon: <RiSupabaseFill />,
+    category: "databases",
+    color: "#1da1f2",
+  },
+  {
+    name: "Tailwind",
+    icon: <SiTailwindcss />,
+    category: "frontend tools",
+    color: "#1da1f2",
+  },
+  {
+    name: "Solidity",
+    icon: <SiSolidity />,
+    category: "programming languages",
+    color: "rgb(247, 194, 95)",
+  },
+  {
+    name: "Apache Maven",
+    icon: <SiApachemaven />,
+    category: "other",
+    color: "rgb(247, 194, 95)",
+  },
 ];
+
+<RiSupabaseFill />;

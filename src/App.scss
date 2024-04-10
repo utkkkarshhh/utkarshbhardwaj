@@ -86,6 +86,10 @@ img {
     border-radius: 12px;
     color: white;
   }
+
+  .techStack {
+    color: white;
+  }
 }
 
 .dark-mode .header {
@@ -599,32 +603,102 @@ textarea {
   font-size: 58px;
 }
 
+.tech-stack-category {
+  color: #1984c6;
+  text-align: center;
+}
+
 .tech-stack-section {
-  margin: 40px 200px 60px 200px;
+  margin: auto auto;
+  width: 100%;
+  max-width: 800px;
 }
 
 .tech-stack-items {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .tech-stack-items .tech-stack {
-  padding: 20px 20px;
-  display: inline-block;
+  padding: 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  .tech-stack-section {
-    margin: auto auto 30px auto;
+.tech-stack-tools {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 10px 0;
+}
+
+.tech-stack-tools-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media only screen and (max-width: 786px) {
+  .tech-stack-category {
+    margin-top: 20px;
   }
-  .tech-stack-items {
+
+  .tech-stack-tools-container {
     display: flex;
+    flex-direction: row;
+    align-content: center;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
   }
+}
+
+// Proficiency Feature
+
+.prof-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prof-cats {
+  display: flex;
+  flex-direction: row;
+}
+
+.prof-cat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto 5px;
+}
+
+.prof-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgb(212, 212, 212);
+  border-radius: 3px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.prof-text {
+  font-weight: bold;
+}
+
+.prof-heading-text {
+  font-weight: bold;
+  font-size: 25px;
+  color: #1da1f2;
+}
+
+.prof-head-small {
+  font-size: 13px;
+  color: black;
 }
 
 //Project Page
@@ -819,7 +893,19 @@ textarea {
   .fp-tech-name {
     display: flex;
     flex-wrap: nowrap;
-    overflow: scroll;
+    animation: scrollLeft 10s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+    200% {
+      transform: translateX(0);
+    }
   }
 
   .fp-short-description p {
@@ -830,5 +916,51 @@ textarea {
     display: flex;
     flex-direction: row;
     margin: auto auto;
+  }
+}
+
+//////Tech STack Single Item /////
+
+.techStack {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  border-radius: 22px;
+  padding: 5px 5px 0px 5px;
+  border: 1px;
+  cursor: pointer;
+  transition: 600ms;
+  color: black;
+}
+
+.techStack:hover {
+  color: #1da1f2;
+}
+
+.techStackLogo {
+  font-size: 40px;
+  text-align: center;
+}
+
+.stackName {
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 786px) {
+  .techStack {
+    width: 60px;
+    margin: 5px;
+    padding: none;
+  }
+
+  .techStackLogo {
+    font-size: 40px;
+  }
+
+  .stackName {
+    padding: 0px 5px;
+    font-size: 12px;
   }
 }

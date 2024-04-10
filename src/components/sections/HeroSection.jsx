@@ -13,7 +13,7 @@ const HeroSection = () => {
   const niches = [
     "Utkarsh Bhardwaj",
     "Software Developer",
-    "Video Editor",
+    "UX Designer",
     "Web Developer",
   ];
 
