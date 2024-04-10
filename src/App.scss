@@ -815,6 +815,57 @@ input:checked + .slider:before {
   margin: auto 100px;
 }
 
+.project-page-body-para {
+  margin-top: 100px;
+}
+
+.project-section-fragment {
+  margin: 50px auto;
+}
+
+.grid-boxx {
+  display: flex;
+  flex-direction: row;
+}
+
+.grid.box-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-boxx-item {
+  border: 2px solid #ccc;
+  border-radius: 22px;
+  margin: auto 10px;
+  padding: 20px 40px;
+}
+
+.grid-boxx-item-heading {
+  color: #1984c6;
+}
+
+.project-page-buttons{
+  margin-left: auto !important;
+  margin-right: auto !important;
+  align-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .grid-boxx {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-boxx-item {
+    margin-bottom: 10px;
+  }
+
+  .grid-boxx-item {
+    padding: 10px 20px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .project-page-body {
     margin: auto 25px;
