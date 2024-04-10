@@ -23,12 +23,12 @@ const TechStackSection = () => {
         <span className="heading-span">tech</span> stack
       </h1>
       <div className="prof-box">
-        {/* <div className="prof-heading">
+        {proficiency && <div className="prof-heading">
           <p className="prof-heading-text">
-            Proficiency Level
-            <span className="prof-head-small"> (out of 100)</span>
+            Don't worry!
+            <span className="prof-head-small"> It will rain green in no time!</span>
           </p>
-        </div> */}
+        </div>}
         <div className="prof-cats">
           <div className="prof-cat">
             <div

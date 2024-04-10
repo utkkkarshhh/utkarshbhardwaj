@@ -664,7 +664,7 @@ textarea {
 
 .prof-box {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -696,6 +696,7 @@ textarea {
   font-weight: bold;
 }
 
+
 .prof-heading-text {
   font-weight: bold;
   font-size: 25px;
@@ -703,7 +704,7 @@ textarea {
 }
 
 .prof-head-small {
-  font-size: 13px;
+  font-size: 18px;
   color: black;
 }
 
