@@ -1,8 +1,18 @@
 import React from "react";
-import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaShareNodes } from "react-icons/fa6";
-
+import { useNavigate } from "react-router-dom";
+import { IoMdArrowRoundBack, IoMdMail } from "react-icons/io";
 const Project3 = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Navigate back
+  };
+
+  const handleMailClick = () => {
+    window.location.href =
+      "mailto:utkarshbhardwajmail@getDefaultNormalizer.com";
+  };
+
   return (
     <div className="project-page">
       <div
@@ -12,19 +22,19 @@ const Project3 = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="project-page-go-back">
+        <div className="project-page-go-back" onClick={handleGoBack}>
           <IoMdArrowRoundBack />
         </div>
         <div className="project-page-project-name">
-          <h1>Multithreaded Task Scheduler using Java</h1>
+          <h1>Multithreaded Task Scheduler</h1>
         </div>
-        <div className="project-page-project-share">
-          <FaShareNodes />
+        <div className="project-page-project-share" onClick={handleMailClick}>
+          <IoMdMail />
         </div>
       </div>
       <div className="project-page-body">
         <h1 className="project-page-body-header">
-          Multithreaded Task Scheduler using Java
+          Multithreaded Task Scheduler
         </h1>
         <div className="project-page-body-para">
           <p>

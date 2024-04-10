@@ -21,32 +21,60 @@ const AboutSection = () => {
       <div className="about-section">
         <div className="about-info">
           <p>
-            Meet Utkarsh Bhardwaj, a highly motivated Final year Masters student
-            in Computer Applications and Science. With a passion for Full Stack
-            Development, UX design and Project Management, Utkarsh is a true
-            tech enthusiast <br /> <br />
-            But his interests don't end there - when he's not busy coding, you
-            might find Utkarsh indulging in his love for content creation or
-            exploring the complexities of world geopolitics. In fact, Utkarsh is
-            also a talented freelance video editor and content strategist.{" "}
+            I'm a Final year Masters student in Computer Applications and
+            Science (2024 Graduate). With a passion for Full Stack Development
+            (Frontend Heavy), UX design and Project Management, I'm a true tech
+            enthusiast. <br /> <br />
+            But my interests don't end there - when i'm not busy tinkering with
+            my code, i indulge in my love for content creation or exploring the
+            complexities of world geopolitics. I'm' also a talented freelance
+            video editor and content strategist (Portfolio).
             <br />
             <br />
             With an impressive array of skills and a passion for learning and
-            growth, Utkarsh is constantly striving to improve himself and his
-            work. His dedication and drive are sure to make him a valuable asset
-            to any team or project he takes on.
+            growth, I'm finding new means to improve myself and myself work. My
+            dedication and drive are sure to make me a valuable asset to any
+            team or project i take on.
             <br /> <br />
             More about <b>Utkarsh</b> 😛 :
             <ul>
               <br />
               <li>
-                Time's magazine <b>Person of the Year 2006.</b>
+                Time's magazine{" "}
+                <b>
+                  <a
+                    className="about-link"
+                    href="https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)#:~:text=%22You%22%20was%20the%20official%20choice,other%20websites%20featuring%20user%20contribution."
+                  >
+                    Person of the Year 2006.
+                  </a>
+                </b>
               </li>
               <li>
-                More than 5k+ lines of contribution on various free education
-                platform.
+                More than 5k+ lines of contribution on{" "}
+                <a
+                  className="about-link"
+                  href="https://en.wikipedia.org/wiki/Special:Contributions/Utkkkarshhh"
+                >
+                  Wikipedia
+                </a>{" "}
+                and other source information platform.
               </li>
-              <li> Open-Source Contributor to Plone.</li>
+              <li>
+                Contributed to Plone.
+                <a
+                  className="about-link"
+                  href="https://github.com/plone/documentation/pull/1484"
+                >
+                  <br></br>#1484
+                </a>
+                <a
+                  className="about-link"
+                  href="https://github.com/plone/volto/pull/4633"
+                >
+                  <br></br>#4633
+                </a>
+              </li>
               <li>
                 Experience in building strong social media presence via content
                 and strategy.
@@ -56,6 +84,11 @@ const AboutSection = () => {
             <b>
               *Currently looking for full-time and internship opportunites!!*
             </b>
+            <i>
+              <br></br>(Remote | On-site | Hybrid)
+              <br></br>(Anywhere in India)
+              <br></br>(Paid | Unpaid)
+            </i>
           </p>
         </div>
         <div className="about-image-section">

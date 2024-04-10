@@ -1,8 +1,20 @@
 import React from "react";
-import { IoMdArrowRoundBack } from "react-icons/io";
-import { FaShareNodes } from "react-icons/fa6";
+import Image from "../../img/projects/Web/GhostMail.png";
+import { useNavigate } from "react-router-dom";
+import { IoMdArrowRoundBack, IoMdMail } from "react-icons/io";
 
 const Project1 = () => {
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1); // Navigate back
+  };
+
+  const handleMailClick = () => {
+    window.location.href =
+      "mailto:utkarshbhardwajmail@getDefaultNormalizer.com";
+  };
+
   return (
     <div className="project-page">
       <div
@@ -12,14 +24,14 @@ const Project1 = () => {
           backgroundSize: "cover",
         }}
       >
-        <div className="project-page-go-back">
+        <div className="project-page-go-back" onClick={handleGoBack}>
           <IoMdArrowRoundBack />
         </div>
         <div className="project-page-project-name">
           <h1>Ghost Mail: Connect Anonymously</h1>
         </div>
-        <div className="project-page-project-share">
-          <FaShareNodes />
+        <div className="project-page-project-share" onClick={handleMailClick}>
+          <IoMdMail />
         </div>
       </div>
       <div className="project-page-body">

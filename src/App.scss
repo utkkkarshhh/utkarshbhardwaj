@@ -273,6 +273,11 @@ img {
   animation: upDownAnimation 1s infinite alternate;
 }
 
+.about-link {
+  color: #1984c6;
+  list-style-type: circle;
+}
+
 @keyframes upDownAnimation {
   0% {
     transform: translateY(0);
@@ -765,8 +770,7 @@ input:checked + .slider:before {
 //Project Page
 
 .project-page {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 100px;
 }
 
 .project-page-image-container {
@@ -774,7 +778,8 @@ input:checked + .slider:before {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 30vh;
+  height: 50vh;
+  background-position: 10%;
   cursor: pointer;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -807,7 +812,13 @@ input:checked + .slider:before {
 }
 
 .project-page-body {
-  margin: auto 300px;
+  margin: auto 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-page-body {
+    margin: auto 25px;
+  }
 }
 
 //Featured Projects Section
