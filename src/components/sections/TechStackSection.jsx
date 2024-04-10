@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import TechStack from "../UI/Cards/TechStack";
 import { techstack } from "../data/ProjectsList";
 
 const TechStackSection = () => {
+  const [proficiency, setProficiency] = useState(false);
+
+  const proficiencyButtonHandler = () => {
+    setProficiency(!proficiency);
+  };
+
   const groupedTechStack = techstack.reduce((acc, item) => {
     if (!acc[item.category]) {
       acc[item.category] = [];
@@ -45,6 +51,14 @@ const TechStackSection = () => {
             ></div>
             <p className="prof-text">50+</p>
           </div>
+          <label class="switch">
+            <input
+              value={proficiency}
+              type="checkbox"
+              onChange={proficiencyButtonHandler}
+            />
+            <span class="slider round"></span>
+          </label>
         </div>
       </div>
       <div className="tech-stack-items">
@@ -59,6 +73,7 @@ const TechStackSection = () => {
                     name={item.name}
                     icon={item.icon}
                     color={item.color}
+                    proficiency={proficiency}
                   />
                 ))}
               </div>

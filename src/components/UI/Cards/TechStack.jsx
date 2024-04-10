@@ -1,12 +1,18 @@
+// TechStack.js
 import React from "react";
 
 const TechStack = (props) => {
+  const { name, icon, color, proficiency } = props;
+
   return (
-    <div className="techStack" title={props.name}>
-      <span style={{ color: props.color }} className="techStackLogo">
-        {props.icon}
+    <div className="techStack" title={name}>
+      <span
+        style={proficiency ? { color: color } : {}}
+        className="techStackLogo"
+      >
+        {icon}
       </span>
-      <p className="stackName">{props.name}</p>
+      <p className="stackName">{name}</p>
     </div>
   );
 };
